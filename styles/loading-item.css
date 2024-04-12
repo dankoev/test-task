@@ -1,0 +1,25 @@
+.loading-item__deals {
+  position: absolute;
+  display: none;
+  border: 5px solid #9b979741;
+  border-top: 5px solid #000000ce;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  animation: spin 1.7s linear infinite;
+
+  &.active {
+    display: inline-block;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test deals</title>
+    <script type="module" src="index.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <section>
+      <h3>Сделки</h3>
+
+      <div class="control">
+        <label
+          >Размер таблицы
+          <select id="deals-heap-size" name="deals-heap-size">
+            <option value="def" disabled>Выберите размер</option>
+            <option value="2">2</option>
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="All">All</option>
+          </select>
+        </label>
+
+        <ul class="pagination">
+          <li>
+            <button class="pagination__prev hidden"><</button>
+          </li>
+          <li class="pagination__page">1</li>
+          <li>
+            <button class="pagination__next hidden">></button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="loading-item__deals"></div>
+      <table class="deals-table">
+        <thead class="deals-table__head"></thead>
+        <tbody class="deals-table__body"></tbody>
+      </table>
+    </section>
+  </body>
+</html>

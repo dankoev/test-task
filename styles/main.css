@@ -1,0 +1,15 @@
+@import url("deals-table.css");
+@import url("./loading-item.css");
+@import url("./paginator.css");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+.control {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

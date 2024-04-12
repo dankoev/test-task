@@ -1,0 +1,29 @@
+.pagination {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  --pagination-color: rgba(71, 70, 70, 0.199);
+  list-style: none;
+
+  & li {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .hidden {
+    display: none;
+  }
+}
+
+.pagination__prev,
+.pagination__next {
+  border: 1px var(--pagination-color) solid;
+  border-radius: 5px;
+  cursor: pointer;
+  background: none;
+  width: 100%;
+  height: 100%;
+}
